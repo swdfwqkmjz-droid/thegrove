@@ -1,0 +1,43 @@
+/* Microblog Styles */
+.microblog-post {
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+.microblog-post-preview {
+  border-bottom: 3px solid var(--off-white);
+  max-width: 60ch;
+  padding-bottom: 1.5em;
+  &:last-of-type {
+    padding-bottom: 0;
+    border-bottom: 0;
+    }
+}
+
+.microblog-meta {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.microblog-content {
+  line-height: 1.6;
+}
+
+.microblog-tags {
+  margin-top: 1em;
+}
+
+.microblog-preview-posts .microblog-post-preview {
+  margin-bottom: 1em;
+}
+.microblog-preview-posts, .microblog-preview-posts time {
+font-size: 1em;
+}
+
+@media (min-width: $ms11) {
+  .microblog-preview-posts, .microblog-preview-posts time {
+    font-size:0.8rem;
+  }
+}

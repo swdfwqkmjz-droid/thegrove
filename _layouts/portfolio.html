@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+
+<article class="portfolio-content container">
+  <a href="/portfolio/" class="inline-nav-link back">Back<span class="screen-reader-text"> to Portfolio page</span></a>
+  <header class="portfolio-header">
+    <h1 class="section-title">{% if page.short-title%}{{ page.short-title | smartypants }}{% else %}{{ page.title | smartypants }}{% endif %}</h1>
+    <div class="portfolio-meta clearfix">
+      <p>Client: {{ page.client }}</p>
+      <p>Industry: {{ page.industry }}</p>
+      <p>Date: {{ page.date | date: "%Y" }}
+      <p>Timeline: {{ page.project-length }}
+      <div class="activities-container">
+        <p>Activities:</p>
+        <ul class="portfolio-activities-list">
+          {% for activities in page.activities %}
+          <li class="portfolio-activities-list-item {{activities | slugify}}">{{ activities }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section>
+    {{ content }}
+  </section>
+</article>

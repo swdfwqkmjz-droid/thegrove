@@ -1,0 +1,40 @@
+<section id="microblog-preview" class="section-preview">
+  <div class="container">
+    <header class="section-preview-header">
+      <h2>
+        <a href="/microblog/" class="section-link">
+          Microblog <span>&#8594;</span>
+        </a>
+      </h2>
+      <p class="tagline">{{ site.microblog_tagline | improve }}</p>
+    </header>
+    
+    <div class="microblog-preview-posts">
+      {% assign recent_posts = site.microblog | reverse | slice: 0, 3 %}
+      {% for post in recent_posts %}
+        <article class="microblog-post-preview h-entry">
+          <div class="microblog-meta">
+            <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}">
+              <a href="{{ post.url }}" class="u-url">
+                {{ post.date | date: "%b %-d" }}
+              </a>
+            </time>
+          </div>
+          <div class="microblog-content e-content">
+            {% assign truncated_content = post.content | truncate: 256 %}
+            {% if truncated_content contains '<img' %}
+              {{ truncated_content }}
+            {% else %}
+              <p>{{ truncated_content | strip_html }}</p>
+            {% endif %}
+            <a href="{{ post.url }}" class="u-url">Read more &#8594;</a>
+          </div>
+
+          <div class="p-author h-card" hidden>
+            <a class="p-name u-url" href="https://adamclaxon.com">Adam Claxon</a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

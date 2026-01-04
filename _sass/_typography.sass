@@ -1,0 +1,137 @@
+body
+  font-size: $ms0
+  font-weight: 300
+  letter-spacing: 0.015em
+  font-family: $serif
+  text-align: left
+  color: var(--text)
+h1,h2,h3,h4,h5,h6
+  margin-bottom: 0.5em
+h1,h2
+  font-family: var(--hairline)
+  font-weight: 300
+  font-style: italic
+  letter-spacing: 0
+  line-height: 1.26
+h1
+  font-size: clamp($ms3, 4vw + 1rem, $ms5)
+  font-family: var(--hairline)
+  margin-top: 0
+  margin-bottom: 0.25em
+  .little
+    display: block
+    font-size: .88rem
+    font-family: var(--sans)
+    font-weight: 600
+    text-transform: uppercase
+    color: var(--subtle)
+h2
+  font-size: $ms3
+  font-size: clamp($ms2, 4vw + 1rem, $ms4)
+h3
+  font-size: $ms1
+  font-size: clamp($ms1, 2vw + 1rem, $ms3)
+  text-transform: uppercase
+  font-family: var(--headline)
+  letter-spacing: 0
+  line-height: 1.26
+h4,h5,h6
+  font-size: $ms0
+  font-family: $headline
+  font-weight: 500
+p
+  font-size: 1em
+  font-family: $serif
+  line-height: 1.5em
+  margin-top: 0
+  color: var(--text)
+strong
+  font-weight: 600
+  letter-spacing: 0.02em
+.standout
+  font-family: $mono
+.big
+  font-family: $display
+  font-size: $ms1
+  font-style: normal
+blockquote
+  font-style: italic
+  line-height: 1.5em
+  quotes: "“" "”" "“" "”"
+  position: relative
+  max-width: 54ch
+  align-self: flex-start
+  margin-bottom: $ms1
+  &::before
+    content: "\201C"  // Left double quotation mark
+    position: absolute
+    left: 0
+    top: 1rem
+    font-size: $ms4
+    color: $foam
+    font-style: normal
+  p
+    hyphens: none!important
+    &:first-of-type
+      margin-top: 0
+  &:after
+    content: close-quote
+    font-family: $sans
+    clip: rect(1px, 1px, 1px, 1px)
+    position: absolute !important
+    height: 0
+    width: 0
+    overflow: hidden
+* + blockquote
+  margin-top: $ms2
+ul
+  list-style-type: "-  "
+footer,.footer-container
+  p, ul
+    font-family: $serif
+    font-style: italic
+    font-size: 0.88rem
+    margin: 0 0 1em
+  h3
+    font-family: $sans
+    font-size: $ms-1
+    line-height: $ms-1
+    letter-spacing: 0.05em
+    margin-bottom: 0.5em
+.layout-post main, .layout-page main, .grove-content
+  h2
+    font-size: $ms2
+  h3
+    font-size: $ms0
+    font-weight: 600
+    font-family: var(--sans)
+    letter-spacing: 0.02em
+  h4,h5,h6
+    font-size: $ms0
+    font-family: $sans
+    font-weight: normal
+.post-meta, .grove-meta, meta
+  margin: 1em 0 2em
+.post-meta, .grove-meta, .meta, .microblog-meta
+  color: var(--muted)
+  p, time
+    font-size: 0.88rem
+    color: var(--muted)
+    font-family: var(--serif)
+    margin: 0 0 0.3em
+    display: block
+    & + .tag-container
+      margin-top: 0.85em
+  p > time
+    display: inline
+  h1 + &
+    margin-top: -0.618em
+p.meta
+  font-family: var(--serif)
+  margin: 0 0 0.3em
+  display: block
+  font-size: 0.88rem
+img + em
+  display: block
+  font-size: 0.88rem
+  color: $muted

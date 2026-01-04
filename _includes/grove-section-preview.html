@@ -1,0 +1,56 @@
+<section id="grove-preview" class="section-preview grove-section-preview">
+  <div class="container">
+    <header class="section-preview-header">
+      <h2>
+        <a href="/grove/">The Grove <span>&#8594;</span></a>
+      </h2>
+      <p class="grove-tagline tagline">{{ site.grove_tagline | improve }}</p>
+    </header>
+
+    {% assign sorted_items = "" | split: "" %}
+
+    {% for item in site.grove_items %}
+    {% if item.updated %}
+    {% assign lastmod = item.updated | date: "%Y-%m-%d %H:%M:%S" %}
+    {% else %}
+    {% assign lastmod = item.date | date: "%Y-%m-%d %H:%M:%S" %}
+    {% endif %}
+    {% assign marker = lastmod | append: "||" | append: item.url %}
+    {% assign sorted_items = sorted_items | push: marker %}
+    {% endfor %}
+
+    {% assign sorted_items = sorted_items | sort | reverse %}
+
+    <ul class="grove-item-list">
+      {% for marker in sorted_items limit:3 %}
+      {% assign parts = marker | split: "||" %}
+      {% assign item_url = parts[1] %}
+      {% assign grove_item = site.grove_items | where: "url", item_url | first %}
+
+      <li class="grove-item-list-item">
+        <div class="grove-item-info">
+          <h3>
+            <a href="{{ grove_item.url }}">
+              {{ grove_item.title | improve }}
+            </a>
+          </h3>
+
+          <div class="grove-image-wrapper">
+            <img src="{{ grove_item.image }}" alt="{{ grove_item.title | escape }}">
+          </div>
+
+          <div class="grove-meta">
+            <ul class="grove-tags-list">
+              {% for tag in grove_item.tags %}
+              <li class="grove-tags-list-item {{ tag | slugify }}">
+                <a href="/grove/tags/{{ tag | slugify }}/">{{ tag }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

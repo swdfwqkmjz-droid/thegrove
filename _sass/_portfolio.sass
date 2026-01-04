@@ -1,0 +1,145 @@
+#portfolio-list
+  .container
+    max-width: $ms10
+.portfolio-item-list
+  margin: 0 0 1em
+  display: block
+  padding: 0
+  align-items: flex-start
+  align-content: stretch
+  flex-flow: row wrap
+  justify-content: space-between
+  @include flexbox()
+  list-style: none
+  gap: 2.5em 1.5em
+.portfolio-item-list-item
+  @include flex (1 1 100%)
+  cursor: pointer
+  margin: 0
+  padding: 0 0 0.5em
+  border: 1px solid #fff
+  width: 100%
+  overflow: hidden
+  border-radius: 0 0 0.4em 0.4em
+  font-size: 0.8em
+  transition: background 0.5s ease-out, border 0.5s ease-out
+  // background: $overlay
+  &:hover, &:focus
+    border: 1px solid $muted
+    background: #fff
+  @media (min-width: $ms9)
+    @include flex (1 1 45%)
+    width: 45%
+    max-width: calc(50% - 0.75em)
+  @media (min-width: $ms10)
+    @include flex (1 3 30.3%)
+    width: 33.3%
+    max-width: calc(33.3% - 0.5em)
+.portfolio-item-list-image
+  min-width: $ms3
+  width: 100%
+  height: auto
+  border-bottom: 1px solid #ccc
+.portfolio-item-info
+  padding: 0.6em 0.5em 0
+  a
+    text-decoration: none
+  h2
+    font-size: $ms0
+    font-family: $display
+    font-weight: 700
+    margin: 0
+    color: $text
+  p
+    font-family: $mono
+    font-size: 0.8em
+    margin: 0.5em 0 1em
+  .portfolio-activities-list-item
+    font-size: 0.7em
+.portfolio-page
+  main
+    padding-top: 1em
+  h1,h2
+    color: $dark-grey
+    margin-top: 0
+  footer h2
+    color: $off-white
+.portfolio-content
+  padding-bottom: 4em
+  img
+    max-width: 100%
+  p
+    width: 100%
+    hyphens: auto
+    max-width: 60ch
+    margin-left: 0
+  h1
+    margin-bottom: 0.618em
+  section
+    align-self: start
+.portfolio-header
+  max-width: 100%
+  overflow: hidden
+  align-self: start
+.portfolio-meta
+  margin: 1em 0 2em
+  font-size: 0.9em
+  font-family: $mono
+  font-size-adjust: ex-height 0.5
+  p
+    font-family: $mono
+    margin: 0 0 0.2em
+.activities-container
+  p
+    display: inline
+    clear: none
+.portfolio-activities-list
+  list-style: none
+  padding: 0
+  margin: 0 0 1em
+  display: inline
+.portfolio-activities-list-item
+  display: inline-block
+  padding: 0.2em 0.7em
+  font-size: 0.8em
+  font-family: $mono
+  background-color: $grey-ultralight
+  text-transform: capitalize
+  border-radius: 0.2em
+  margin: 0 0 0.4em
+  &.process-mapping
+    background-color: $dark-grey
+    color: #fff
+  &.user-interviews
+    background-color: $love-light
+    color: #fff
+  &.journey-mapping
+    background-color: $gold
+  &.ux-workshop
+    background-color: $pine
+    color: #fff
+  &.personas
+    background-color: $rose
+  &.interface-design
+    background-color: $foam
+  &.service-blueprinting
+    background-color: $foam-dark
+    color: #fff
+#testimonials
+  .container
+    align-items: stretch
+    align-content: stretch
+    flex-flow: row wrap
+    justify-content: space-between
+    gap: 0
+    width: $ms10
+    max-width: 100%
+  @include flexbox()
+  blockquote
+    hyphens: auto
+    @include flex (1 1 100%)
+    width: 100%
+    @media screen and (min-width: $ms9)
+      @include flex (1 2 49%)
+      min-width: 0
+      max-width: calc(50% - 1em)

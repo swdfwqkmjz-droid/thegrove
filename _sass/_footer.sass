@@ -1,0 +1,94 @@
+footer
+  background: $green
+  color: $off-white
+  margin-bottom: 0
+  padding: 0
+  color: var(--white)
+  p
+    max-width: 75ch
+    color: var(--white)
+  a
+    color: $light-pink
+    text-decoration: none
+    transition: color 0.3s ease-in-out
+    &:hover,&:focus
+      color: #fff
+  h1,h2,h3,h4,h5,h6
+    color: $off-white
+  h2
+    font-size: $ms2
+  form
+    margin: 3em 0 3em
+    width: $ms8
+    max-width: 100%
+    font-size: $ms0
+    label
+      font-size: $ms0
+    input, textarea
+      display: block
+      padding: 0.25em 0
+      margin-bottom: $ms1
+      width: 100%
+      border: none
+      outline: none
+      border-bottom: 2px solid $off-white
+      border-radius: 0
+      background-color: $green
+      font-size: $ms0
+      font-family: $sans
+      font-weight: 400
+      color: $off-white
+    button
+      border: 2px solid $red
+      background-color: $red
+      color: $off-white
+      font-size: $ms0
+      font-family: $sans
+      font-weight: 700
+      padding: 0.2em 0.6em 0.25em
+      &:hover
+        background-color: $dark-grey
+        border-color: $dark-grey
+      &:focus
+        border-color: $off-white
+.contact-form-container
+  max-width: $ms9
+  margin: auto
+  padding: 1em
+  width: 100%
+.footer-container
+  padding: 1em
+  margin: auto
+  max-width: $ms14
+  position: relative
+  @media (min-width: $ms9)
+    @include flexbox()
+    justify-content: space-between
+    align-items: flex-start
+    gap: 0 $ms1
+    flex-wrap: wrap
+.footer-section
+  flex-basis: 1 1 
+.social-icons
+  a
+    text-decoration: none
+    &:hover
+      color: #6364ff
+
+.footer-nav
+  @include flexbox()
+  justify-content: flex-start
+  align-items: flex-start
+  gap: $ms1
+  ul
+    list-style: none
+    padding: 0
+    margin: 0 0 $ms1 0
+  &-section
+
+.footer-copyright
+  flex-basis: 100%
+  width: 100%
+  p
+    margin: 0
+    font-size: $ms-1

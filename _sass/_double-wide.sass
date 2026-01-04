@@ -1,0 +1,71 @@
+// Double-wide container system for pairing smaller sections side-by-side
+.double-wide
+  display: block
+  max-width: $ms13
+  margin: 0 auto
+  
+  // On desktop/tablet, both sections share white background
+  @media (min-width: 768px)
+    background-color: #fff
+  
+  // Stack sections normally on mobile
+  .section-preview
+    .container
+      max-width: 100%
+      
+    // Remove counter increment for sections within double-wide
+    // since they're treated as a unit
+    counter-increment: none
+      
+  // Side-by-side layout on tablet and desktop
+  @media (min-width: 768px)
+    display: flex
+    gap: 2rem
+    .section-preview
+      flex: 4
+      margin-bottom: 0
+      // Inherit the white background from parent
+      background-color: inherit
+      --muted: var(--a11y-grey)
+      
+      &:nth-of-type(even)
+        background-color: inherit
+        flex: 3
+        --muted: var(--a11y-grey)
+      .container
+        max-width: none
+        padding-left: 1rem
+        padding-right: 1rem
+// Music preview specific styles
+.music-preview-list
+  list-style: none
+  padding: 0
+  margin: 0
+  .music-preview-item
+    display: flex
+    align-items: center
+    gap: 0.5rem
+    padding: 0.5rem 0
+    border-bottom: 1px solid rgba(0,0,0,0.1)
+    &:last-child
+      border-bottom: none
+    .track-info
+      flex: 1
+      h3
+        margin: 0
+        font-size: 0.9rem
+        a
+          text-decoration: none
+          color: inherit
+          &:hover
+            text-decoration: underline
+      .duration
+        font-size: 0.75rem
+        color: #666
+.music-mini-player
+  margin-top: 1rem
+  
+  #mini-now-playing
+    font-size: 0.8rem
+    margin-bottom: 0.5rem
+    color: #666

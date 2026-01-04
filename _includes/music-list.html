@@ -1,0 +1,16 @@
+<li class="music-item-list-item" data-src="{{ track.m4a | absolute_url }}">
+  <div class="music-track-info">
+    <h2><button class="play-button" data-src="{{ track.m4a | absolute_url }}">{{ track.title | smartypants }}</button></h2>
+    <p>{{ track.duration }}</p>
+    <a href="{{ track.url }}">Details</a>
+    <p>{{ track.date | date: "%B %-d, %Y" }}</p>
+    <p class="status status-{{ track.status }}">Status: {{ track.status | capitalize }}</p>
+    <ul class="music-tags-list">
+      {% for tag in track.tags %}
+      <li class="music-tags-list-item {{ tag | slugify }}">
+        <a href="/music/tags/{{ tag | slugify }}/">{{ tag }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</li>

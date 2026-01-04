@@ -1,0 +1,36 @@
+<section id="music-preview" class="section-preview">
+  <div class="container">
+    <header class="section-preview-header">
+      <h2>
+        <a href="/music/" class="section-link">
+          Music <span>&#8594;</span>
+        </a>
+      </h2>
+      <p class="tagline">{{ site.music_tagline }}</p>
+    </header>
+    
+    <div class="music-preview-player">
+      {% assign latest_tracks = site.music | reverse | slice: 0, 3 %}
+      <ul class="music-preview-list">
+        {% for track in latest_tracks %}
+          <li class="music-preview-item" data-src="{{ track.m4a | absolute_url }}">
+            <div class="music-track-info">
+              <h3><button class="play-button" data-src="{{ track.m4a | absolute_url }}" data-title="{{ track.title }}">{% include play.svg %}{{ track.title | smartypants }}</button></h3>
+              <div class="music-preview-meta">
+                <p>{{ track.duration }}</p>
+                <a href="{{ track.url }}">Details</a>
+              </div>
+              </div>
+            </li>
+        {% endfor %}
+      </ul>
+      
+      <div class="music-mini-player">
+        <div id="mini-now-playing">Select a track above</div>
+        <audio id="mini-audio-player" controls style="width: 100%;">
+          <source src="" type="audio/mp4">
+        </audio>
+      </div>
+    </div>
+  </div>
+</section>

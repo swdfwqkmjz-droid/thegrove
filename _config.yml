@@ -1,0 +1,69 @@
+title: Ben Flack
+email: bflack@gmail.com
+description: >-
+  👋 Personal homepage • 🪴 Digital garden
+keywords: design, music, theology, combinations of the aforementioned.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://benflack.me"
+author: 
+  name: Ben Flack
+  email: bflack@gmail.com
+github_username: bflack
+plugins:
+  - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-typogrify
+# Build settings
+encoding: utf-8
+
+# Typogrify settings
+typogrify:
+  ignore_tags: []
+sass:
+  style: compressed
+markdown: kramdown
+permalink: /:title/
+timezone: America/Indiana/Indianapolis
+defaults:
+  - scope:
+      path: ""
+      type: "microblog"
+    values:
+      layout: "microblog"
+collections:
+  grove_items:
+    output: true
+    permalink: /grove/:title/
+  library:
+    output: false
+    permalink: /stacks/:title/
+  music:
+    output: true
+    permalink: /music/:title/
+  microblog:
+    output: true
+    permalink: /microblog/:year/:month/:day/:title/
+  now:
+    output: true
+    permalink: /now/:slug/ 
+
+# Add microblog tagline
+microblog_tagline: "Quick thoughts, links, and updates."
+library_tagline: "A growing list of books and short stories I’ve read, loved, or am exploring."
+grove_tagline: "A digital garden—notes, essays, and things still taking root."
+music_tagline: "Works in progress, sketches, field recordings, and finished pieces."
+now_tagline: "Current projects, focuses, and where my time is going."
+podcast:
+  title: "Ben Flack – Music Feed"
+  description: "Songs, sketches, and sonic experiments from Ben Flack."
+  author: "Ben Flack"
+  email: "bflack@gmail.com"
+  url: "https://benflack.me/music"
+  image: "https://"
+  copyright: "© {{ 'now' | date: '%Y' }} Ben Flack"
+exclude:
+  - generate-music-yaml.sh
+  - redirects.json
+  - '**/template.md'

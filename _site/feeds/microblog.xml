@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ben Flack -- Microblog</title>
+    <description>Quick thoughts, links, and updates.</description>
+    <link>http://localhost:4000/microblog/</link>
+    <atom:link href="http://localhost:4000/feeds/microblog.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 04 Jan 2026 16:43:32 -0500</pubDate>
+    <lastBuildDate>Sun, 04 Jan 2026 16:43:32 -0500</lastBuildDate>
+    <generator>Jekyll v4.4.1</generator>
+    
+    
+      <item>
+        <title>I&apos;m enjoying The Poisoned King, to say the least</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;The human creature is such a deceptively simple thing to look at. You can watch someone peel an orange or trip up a flight of stairs, and forget that inside they are strange and infinite. Take a human by the wrist and you have in your hand a piece of unending longing.&lt;/p&gt;
+
+  &lt;p&gt;—Katherine Rundell, Impossible Creatures, Book 2: The Poisoned King&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Thu, 01 Jan 2026 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/microblog/2026/01/01/enjoying-the-poisoned-king/</link>
+        <guid isPermaLink="true">http://localhost:4000/microblog/2026/01/01/enjoying-the-poisoned-king/</guid>
+        
+        <category>music</category>
+        
+        <category>reflections</category>
+        
+      </item>
+    
+      <item>
+        <title>Visiting the art museum</title>
+        <description>&lt;p&gt;Mic and I had a date day at the &lt;a href=&quot;https://discovernewfields.org&quot;&gt;IMA Galleries&lt;/a&gt;. I always come away from there feeling like it was worthwhile. I also always aspire to sketch lots of things and end up only sketching a few and feeling good about even fewer of them. 😂&lt;/p&gt;
+
+&lt;p&gt;We’ve enjoyed giving some more intention to our local institutions lately. For us, that’s meant buying locally just a little more—usually bread, or going ahead and getting that museum membership. Now we’ll total three of them for 2026, which is exciting! We think we’ll reap a lot of good experiences for ourselves, the kids, and all of us together.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2026/2026-01-04-visiting-newfields.jpeg&quot; alt=&quot;Sketch of some Japanese art showing mountains and a waterfall&quot; /&gt;
+&lt;em&gt;One sketch I felt good about this visit&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 04 Jan 2026 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/microblog/2026/01/04/visiting-newfields/</link>
+        <guid isPermaLink="true">http://localhost:4000/microblog/2026/01/04/visiting-newfields/</guid>
+        
+      </item>
+    
+  </channel>
+</rss>

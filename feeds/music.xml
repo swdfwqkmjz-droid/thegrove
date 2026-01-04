@@ -1,0 +1,41 @@
+---
+layout: none
+permalink: /feeds/music.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+
+  <channel>
+    <title>{{ site.title | xml_escape }} — Music Feed</title>
+    <link>{{ site.url }}/music/</link>
+    <description>Original music by Ben Flack</description>
+    <language>en-us</language>
+    <copyright>&#xA9; {{ 'now' | date: '%Y' }} Ben Flack</copyright>
+    <atom:link href="{{ site.url }}/feeds/music.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://adamclaxon.com/assets/images/music/podcast.jpg</url>
+      <title>Adam Claxon</title>
+      <link>https://adamclaxon.com/music/</link>
+    </image>
+    <itunes:image href="https://benflack.me/assets/images/music/podcast.jpg"></itunes:image>
+    <author>Ben Flack</author>
+    <itunes:author>Ben Flack</itunes:author>
+    {% for music in site.music reversed %}
+    {% if music.m4a %}
+    <item>
+      <title>{{ music.title }}</title>
+      <link>{{ music.url | absolute_url }}</link>
+      <guid>{{ music.url | absolute_url }}</guid>
+      <author>Ben Flack</author>
+      <summary>{{ music.summary | strip_html | normalize_whitespace }}</summary>
+      <description><![CDATA[
+        {{ music.summary | xml_escape | replace: "\n", "<br />" }}<br/><br/>Find more at <a href="https://benflack.me/music">https://benflack.me/music</a><br/><br/>© {{ 'now' | date: '%Y' }} Ben Flack. All rights reserved.]]></description>
+      <pubDate>{{ music.date | date_to_rfc822 }}</pubDate>
+      <enclosure url="{{ music.m4a | absolute_url }}" length="{{ music.m4a | file_size }}" type="audio/mp4" />
+    </item>
+    {% endif %}
+    {% endfor %}
+  </channel>
+</rss>

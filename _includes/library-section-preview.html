@@ -1,0 +1,27 @@
+<section id="library-home" class="section-preview library-section-preview">
+  <div class="container">
+    <header class="section-preview-header">
+      <h2>
+        <a href="/stacks/" class="section-link">
+          The Stacks <span>&#8594;</span>
+        </a>
+      </h2>
+      <p class="tagline">{{ site.library_tagline | improve }}</p>
+    </header>
+    <ul class="library-grid">
+      {% assign recent_books = site.library | reverse | slice: 0, 4 %}
+      {% for book in recent_books %}
+        <li class="library-item">
+          <a href="{{ book.link }}" target="_blank">
+            {% assign image_src = "library/" | append: book.slug %}
+            <img src="{{ book.cover }}" alt="{{ book.title }}">
+            <div class="library-meta library-item-info">
+              <h2>{{ book.title | improve }}</h2>
+              <p class="author">{{ book.author | improve }}</p>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

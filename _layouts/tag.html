@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<section id="grove-list">
+  <div class="container">
+    <h1>
+      {% assign words = page.tag | split: " " %}
+      {% for word in words %}
+        {{ word | capitalize }}{% unless forloop.last %} {% endunless %}
+      {% endfor %}
+    </h1>
+    <p class="grove-tagline">
+      Notes in the Grove tagged <strong>{{ page.tag }}</strong>.
+    </p>
+
+    <ul class="grove-item-list">
+    {% assign tagged_items = site.grove_items | where_exp: "item", "item.tags contains page.tag" %}
+    {% for grove_item in tagged_items reversed %}
+      <li class="grove-item-list-item">
+        <div class="grove-item-info">
+          <h2>
+            <a href="{{ grove_item.url }}">
+              {{ grove_item.title | smartypants }}
+            </a>
+          </h2>
+          {% assign status_class = "" %}
+          {% if grove_item.status == "budding" %}
+            {% assign status_class = "status-budding" %}
+          {% elsif grove_item.status == "growing" %}
+            {% assign status_class = "status-growing" %}
+          {% elsif grove_item.status == "established" %}
+            {% assign status_class = "status-established" %}
+          {% elsif grove_item.status == "archive" %}
+            {% assign status_class = "status-archive" %}
+          {% endif %}
+
+          <p class="status {{ status_class }}">
+            {{ grove_item.status | capitalize }}
+          </p>
+          <p>
+            {{ grove_item.category }}
+          </p>
+          <ul class="grove-tags-list">
+            {% for tag in grove_item.tags %}
+              <li class="grove-tags-list-item {{ tag | slugify }}">
+                <a href="/grove/tags/{{ tag | slugify }}/">{{ tag }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</section>

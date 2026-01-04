@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<section id="music-list">
+  <div class="container grid-2col">
+    <div class="music-items">
+      <h1>Music tagged with {{ page.tag | capitalize }}</h1>
+      <p><a href="/music/">&larr; Back to Music</a></p>
+      <ul class="music-item-list">
+      {% assign tagged_music = site.music | where_exp: "item", "item.tags contains page.tag" %}
+      {% for track in tagged_music reversed %}
+        <li class="music-item-list-item" data-src="{{ track.m4a | absolute_url }}">
+          <div class="music-track-info">
+            <h2><button class="play-button" data-src="{{ track.m4a | absolute_url }}">{% include play.svg %}{{ track.title | smartypants }}</button></h2>
+            <p>{{ track.duration }}</p>
+            <p>{{ track.date | date: "%B %-d, %Y" }}</p>
+            <p class="status status-{{ track.status }}">Status: {{ track.status | capitalize }}</p>
+            <a href="{{ track.url }}">Details</a>
+            <ul class="music-tags-list">
+              {% for tag in track.tags %}
+              <li class="music-tags-list-item {{ tag | slugify }}">
+                <a href="/music/tags/{{ tag | slugify }}/">{{ tag }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+
+    <div class="music-player">
+      <h3 id="now-playing-title">Now Playing: None</h3>
+      <audio id="audio-player" controls>
+        <source src="" type="audio/mp4">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+</section>
+
+<script src="/assets/js/music-player.js"></script>

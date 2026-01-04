@@ -1,0 +1,102 @@
+---
+layout: default
+slug: grove
+title: The Grove
+---
+<section id="grove-list">
+  <div class="container">
+    <h1>The Grove</h1>
+    <p class="grove-tagline">
+      {{ site.grove_tagline | improve }}
+    </p>
+    <div class="callout callout-note">
+      <p>Notes in the Grove have a status and a collection of tags.
+        <span class="status status-budding"><em>Budding</em></span> notes are new growth&mdash;brief, undeveloped, with
+        few connections.
+        These are fresh thoughts or seeds of ideas.
+        <span class="status status-established"><em>Established</em></span> notes have taken root&mdash;clear in intent
+        and well-connected to others in the Grove.
+        Not necessarily “finished,” but stable.
+      </p>
+    </div>
+
+    <div class="tag-container">
+      <ul class="grove-tags-list">
+        {% assign all_tags = site.grove_items | map: "tags" | compact | flatten | uniq | sort %}
+        {% for tag in all_tags %}
+        <li class="grove-tags-list-item {{ tag | slugify }}">
+          <a href="/grove/tags/{{ tag | slugify }}/">{{ tag }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    {% comment %}
+    Build a sorted array by last modified (updated if present, else date)
+    {% endcomment %}
+    {% assign sorted_items = "" | split: "" %}
+    {% for item in site.grove_items %}
+    {% if item.updated %}
+    {% assign lastmod = item.updated | date: "%Y-%m-%d %H:%M:%S" %}
+    {% else %}
+    {% assign lastmod = item.date | date: "%Y-%m-%d %H:%M:%S" %}
+    {% endif %}
+    {% assign marker = lastmod | append: "||" | append: item.url %}
+    {% assign sorted_items = sorted_items | push: marker %}
+    {% endfor %}
+    {% assign sorted_items = sorted_items | sort | reverse %}
+
+    <ul class="grove-item-list">
+      {% for marker in sorted_items %}
+      {% assign parts = marker | split: "||" %}
+      {% assign item_url = parts[1] %}
+      {% assign grove_item = site.grove_items | where: "url", item_url | first %}
+
+      {% assign status_class = "" %}
+      {% if grove_item.status == "budding" %}
+      {% assign status_class = "status-budding" %}
+      {% elsif grove_item.status == "growing" %}
+      {% assign status_class = "status-growing" %}
+      {% elsif grove_item.status == "established" %}
+      {% assign status_class = "status-established" %}
+      {% elsif grove_item.status == "archive" %}
+      {% assign status_class = "status-archive" %}
+      {% endif %}
+
+      <li class="grove-item-list-item">
+        <div class="grove-item-info">
+          <h2>
+            <a href="{{ grove_item.url }}">
+              {{ grove_item.title | improve }}
+            </a>
+          </h2>
+
+          <div class="grove-image-wrapper">
+            <img src="{{ grove_item.image }}" alt="{{ grove_item.title }}">
+          </div>
+
+          <div class="grove-meta">
+            <p class="status {{ status_class }}">
+              {{ grove_item.status | capitalize }}
+            </p>
+            {% if grove_item.category %}
+            <p>{{ grove_item.category }}</p>
+            {% endif %}
+            <ul class="grove-tags-list">
+              {% for tag in grove_item.tags %}
+              <li class="grove-tags-list-item {{ tag | slugify }}">
+                <a href="/grove/tags/{{ tag | slugify }}/">{{ tag }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+</section>
+
+</hr>
+{% include library-section-preview.html %}

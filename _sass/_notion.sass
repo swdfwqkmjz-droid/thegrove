@@ -1,0 +1,92 @@
+
+/* _notion.sass */
+/* General article elements inspired by Notion using theme variables and light variants */
+
+hr
+  border: none
+  border-top: 1px solid var(--muted)
+  margin: 2em 0
+
+code
+  font-family: $mono
+  background: var(--grey-ultralight)
+  padding: 0.2em 0.4em
+  border-radius: 0.25em
+
+pre
+  font-family: $mono
+  background: var(--grey-ultralight)
+  padding: 1em
+  overflow-x: auto
+  border-radius: 0.5em
+  line-height: 1.5em
+
+ul, ol
+  padding-left: 1.5em
+  margin: 0 0 1em
+ol
+  list-style-type: decimal
+
+.callout
+  border-left: 4px solid var(--muted)
+  background: var(--grey-ultralight)
+  padding: 1em
+  margin: 1.5em 0
+  border-radius: 0 0.5em 0.5em 0
+  font-size: $ms-1
+  display: flex
+  align-items: flex-start
+  gap: 0.75em
+  max-width: 80ch
+
+  *
+    vertical-align: center
+  p
+    font-size: 1rem
+    max-width: 100%
+
+.callout::before
+  font-size: 1.5em
+  line-height: 1.25em
+
+.callout-note
+  border-color: var(--foam)
+  background: var(--foam-light)
+
+.callout-warning
+  border-color: var(--gold)
+  background: var(--gold-light)
+
+.callout-tip
+  background-color: $pine-light
+  border-left: 4px solid $pine
+
+.callout-success
+  border-color: var(--green)
+  background: var(--green-light)
+
+.callout-error
+  border-color: var(--red)
+  background: var(--red-light)
+
+.callout-question
+  border-color: var(--pine)
+  background: var(--pine-light)
+
+.callout-note::before
+  content: "📝"
+
+.callout-warning::before
+  content: "⚠️"
+
+.callout-tip::before
+  content: "💡"
+
+.callout-success::before
+  content: "✅"
+
+.callout-error::before
+  content: "❌"
+
+.callout-question::before
+  content: "❓"

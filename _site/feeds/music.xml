@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+
+  <channel>
+    <title>Ben Flack — Music Feed</title>
+    <link>http://localhost:4000/music/</link>
+    <description>Original music by Ben Flack</description>
+    <language>en-us</language>
+    <copyright>&#xA9; 2026 Ben Flack</copyright>
+    <atom:link href="http://localhost:4000/feeds/music.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://adamclaxon.com/assets/images/music/podcast.jpg</url>
+      <title>Adam Claxon</title>
+      <link>https://adamclaxon.com/music/</link>
+    </image>
+    <itunes:image href="https://benflack.me/assets/images/music/podcast.jpg"></itunes:image>
+    <author>Ben Flack</author>
+    <itunes:author>Ben Flack</itunes:author>
+    
+    
+    <item>
+      <title>commonwealth</title>
+      <link>http://localhost:4000/music/commonwealth/</link>
+      <guid>http://localhost:4000/music/commonwealth/</guid>
+      <author>Ben Flack</author>
+      <summary>I recorded a few friends saying whatever they wanted straight into Ableton on my iBook's microphone, and then tried to make a composition of it.</summary>
+      <description><![CDATA[
+        I recorded a few friends saying whatever they wanted straight into Ableton on my iBook&apos;s microphone, and then tried to make a composition of it.<br/><br/>Find more at <a href="https://benflack.me/music">https://benflack.me/music</a><br/><br/>© 2026 Ben Flack. All rights reserved.]]></description>
+      <pubDate>Tue, 27 Mar 2007 00:00:00 -0400</pubDate>
+      <enclosure url="http://localhost:4000/assets/music/commonwealth.m4a" length="/assets/music/commonwealth.m4a" type="audio/mp4" />
+    </item>
+    
+    
+    
+    <item>
+      <title>And Then the Sun Broke Through</title>
+      <link>http://localhost:4000/music/and-then-the-sun-broke-through/</link>
+      <guid>http://localhost:4000/music/and-then-the-sun-broke-through/</guid>
+      <author>Ben Flack</author>
+      <summary>Originally created as an entry for Starbucks' Off the Clock project, this piece was made entirely from acoustic guitar sounds chopped up and run through various plugins and the like.</summary>
+      <description><![CDATA[
+        Originally created as an entry for Starbucks&apos; Off the Clock project, this piece was made entirely from acoustic guitar sounds chopped up and run through various plugins and the like.
+<br/><br/>Find more at <a href="https://benflack.me/music">https://benflack.me/music</a><br/><br/>© 2026 Ben Flack. All rights reserved.]]></description>
+      <pubDate>Sun, 12 Nov 2006 00:00:00 -0500</pubDate>
+      <enclosure url="http://localhost:4000/assets/music/and-then-the-sun-broke-through.m4a" length="/assets/music/and-then-the-sun-broke-through.m4a" type="audio/mp4" />
+    </item>
+    
+    
+    
+    <item>
+      <title>Sixty-five and Cloudy</title>
+      <link>http://localhost:4000/music/sixty-five-and-cloudy/</link>
+      <guid>http://localhost:4000/music/sixty-five-and-cloudy/</guid>
+      <author>Ben Flack</author>
+      <summary>My first original piece created with Ableton Live. I was experimenting with mixing acoustic guitar with electronic drums and some effects, and ended up with something that reflects the feeling of contentment when the weather is just right.</summary>
+      <description><![CDATA[
+        My first original piece created with Ableton Live. I was experimenting with mixing acoustic guitar with electronic drums and some effects, and ended up with something that reflects the feeling of contentment when the weather is just right.
+<br/><br/>Find more at <a href="https://benflack.me/music">https://benflack.me/music</a><br/><br/>© 2026 Ben Flack. All rights reserved.]]></description>
+      <pubDate>Mon, 27 Feb 2006 00:00:00 -0500</pubDate>
+      <enclosure url="http://localhost:4000/assets/music/sixty-five-and-cloudy.m4a" length="/assets/music/sixty-five-and-cloudy.m4a" type="audio/mp4" />
+    </item>
+    
+    
+  </channel>
+</rss>

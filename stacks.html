@@ -1,0 +1,28 @@
+---
+layout: default
+title: The Stacks
+slug: stacks
+redirect_from: "/library/"
+---
+
+<section id="library">
+  <div class="container">
+    <h1>The Stacks</h1>
+    <p class="tagline">{{ site.library_tagline | improve }}</p>
+    <ul class="library-grid">
+    {% for book in site.library reversed %}
+      <li class="library-item">
+        <a href="{{ book.link }}" target="_blank">
+          {% assign image_src = "library/" | append: book.slug %}
+          <img src="{{ book.cover }}" alt="{{ book.title }}">
+        <div class="library-meta library-item-info">
+          <h2>{{ book.title | improve }}</h2>
+          <p class="author">{{ book.author | improve }}</p>
+        </div>
+        </a>
+      </li>
+     {% endfor %}
+    </ul>
+  </div>
+</section>
+{% include grove-section-preview.html %}

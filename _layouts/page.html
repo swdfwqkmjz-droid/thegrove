@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<section>
+  <div class="container">
+    {% if page.title %}
+      <h1>{{ page.title | smartypants }}</h1>
+    {% endif %}
+    {% if page.tagline %}
+    <p class="tagline">
+      {{ page.tagline | smartypants }}
+    </p>
+    {% endif %}
+    {{content}}
+  </div>
+</section>
+{% if page.includes contains "stacks" %}
+  {% include library-section-preview.html %}
+{% endif %}
+{% if page.includes contains "microblog" %}
+  {% include microblog-section-preview.html %}
+{% endif %}
+{% if page.includes contains "music" %}
+  {% include music-section-preview.html %}
+{% endif %}
+{% if page.includes contains "grove" %}
+  {% include grove-section-preview.html %}
+{% endif %}

@@ -1,0 +1,55 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" lang="en" xml:lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    {% if page.collection == 'portfolio_items' %}
+      <meta name="robots" content="noindex">
+    {% elsif page.title == 'Portfolio' %}
+      <meta name="robots" content="noindex">
+    {% endif %}
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,300&family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Literata:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link rel="me" href="https://github.com/bflack" />
+    <script data-goatcounter="https://thiswholecity.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  </head>
+
+  {% if page.collection == 'portfolio_items' %}
+    <body class="portfolio-page">
+  {% elsif page.title == 'Portfolio' %}
+    <body class="portfolio-page">
+  {% elsif page.collection == 'grove_items' %}
+    <body class="grove-page">
+  {% elsif page.title == 'Garden' %}
+    <body class="grove-page">
+  {% else %}
+    <body class="{% if page.slug %}{{ page.slug }}{% elsif page.layout %}layout-{{ page.layout }}{% else %}default{% endif %}">
+  {% endif %}
+    <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+    {% include header.html %}
+
+    <main role="main">
+        {{ content }}
+    </main>
+    {% include footer.html %}
+    <script src="/assets/js/music-player.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const groveItems = document.querySelectorAll('.grove-item-list-item');
+        groveItems.forEach(item => {
+          item.addEventListener('click', function() {
+            const link = this.querySelector('a');
+            if (link) {
+              window.location = link.href;
+            }
+            return false;
+          });
+        });
+      });
+    </script>

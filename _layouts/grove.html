@@ -1,0 +1,80 @@
+---
+layout: default
+---
+<article class="grove-content container post h-entry note {{ page.status }}" itemscope
+  itemtype="http://schema.org/BlogPosting">
+  <a href="/grove/" class="inline-nav-link back">Back<span class="screen-reader-text"> to Garden</span></a>
+  <header class="grove-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | smartypants }}</h1>
+    <div class="grove-meta clearfix">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.updated -%}
+      <p>Updated: <time class="dt-updated" datetime="{{ page.updated | date_to_xmlschema }}" itemprop="dateUpdated">
+          {%- assign date_format = "%b %-d, %Y" -%}
+          {{ page.updated | date: date_format }}
+        </time></p>
+      {%- endif -%}
+      {% assign status_class = "" %}
+      {% if page.status == "budding" %}
+      {% assign status_class = "status-budding" %}
+      {% elsif page.status == "growing" %}
+      {% assign status_class = "status-growing" %}
+      {% elsif page.status == "established" %}
+      {% assign status_class = "status-established" %}
+      {% elsif page.status == "archive" %}
+      {% assign status_class = "status-archive" %}
+      {% endif %}
+
+      <p>
+        Status: <span class="status {{ status_class }}">{{ page.status | capitalize }}</span>
+      </p>
+      <div class="tag-container">
+        <ul class="grove-tags-list">
+          {% for tags in page.tags %}
+          <li class="grove-tags-list-item {{tags | slugify}}">
+            <a href="/grove/tags/{{ tags | slugify }}/">{{ tags }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="post-content e-content" itemprop="articleBody">
+      {{content}}
+    </div>
+    {% if page.backlinks %}
+    <section class="backlinks">
+      <h3>Linked from</h3>
+      <ul>
+        {% for link in page.backlinks %}
+        <li><a href="{{ link.url }}">{{ link.title | smartypants }}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  </section>
+</article>
+<script>
+  document.querySelectorAll('.link-preview').forEach(async (el) => {
+    const url = el.dataset.url;
+    const response = await fetch(`https://api.microlink.io/?url=${encodeURIComponent(url)}`);
+    const data = await response.json();
+
+    el.innerHTML = `
+  <a href="${url}">  
+  <div class="content">
+    <h3>${data.data.title}</h3>
+    <p>${data.data.description}</p>
+  </div>
+  <div class="link-preview-image">
+    <img src="${data.data.image.url}" alt="${data.data.title}">
+  </div>
+  </a>
+  `;
+  });
+</script>

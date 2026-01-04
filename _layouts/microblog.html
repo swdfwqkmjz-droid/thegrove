@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<article class="microblog-entry h-entry">
+  <div class="container">
+    <p><a href="/microblog/">&larr; Back to Microblog</a></p>
+      {% if page.title %}
+		   <h1 class="post-title p-name" itemprop="name headline">{{ page.title | improve }}</h1>
+	  {% endif %}
+    <div class="grove-meta clearfix">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.updated -%}
+      </br>
+      Updated: <time class="dt-updated" datetime="{{ page.updated | date_to_xmlschema }}" itemprop="dateUpdated">
+        {%- assign date_format = "%b %-d, %Y" -%}
+        {{ page.updated | date: date_format }}
+      </time>
+      {%- endif -%}
+      <div class="tag-container">
+        <ul class="grove-tags-list">
+          {% for tags in page.tags %}
+          <li class="grove-tags-list-item {{tags | slugify}}">
+            <a href="/grove/tags/{{ tags | slugify }}/">{{ tags }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="microblog-content e-content">
+      {{ content }}
+    </div>
+
+    <div class="p-author h-card" hidden>
+      <a class="p-name u-url" href="https://adamclaxon.com">Adam Claxon</a>
+    </div>
+
+
+    <a class="u-url" href="{{ page.url | absolute_url }}" hidden></a>
+  </div>
+</article>

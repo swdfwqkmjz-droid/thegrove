@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<article class="music-entry">
+  <div class="container">
+    <p><a href="/music/">&larr; Back to Music</a></p>
+    <h1>{{ page.title | smartypants }}</h1>
+    <div class="meta">
+      {% assign status_class = "" %}
+      {% if page.status == "sketch" or page.status == "idea" %}
+        {% assign status_class = "status-budding" %}
+      {% elsif page.status == "in-progress" %}
+        {% assign status_class = "status-growing" %}
+      {% elsif page.status == "final" %}
+        {% assign status_class = "status-established" %}
+      {% endif %}
+
+      <p>Status: <span class="status {{ status_class }}">{{ page.status | capitalize }}</span>
+      </p>
+
+      {% if page.category %}
+        <p class="music-category">Category: {{ page.category | capitalize }}</p>
+      {% endif %}
+      {% if page.file %}
+        <p class="audio-length">Duration: <span id="audio-duration">{{ page.duration }}</span></p>
+      {% endif %}
+      {% if page.links %}
+        <ul class="external-links">
+          {% for link in page.links %}
+            <li><a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.name }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {% if page.tags %}
+        <ul class="grove-tags-list">
+          {% for tag in page.tags %}
+            <li class="grove-tags-list-item {{ tag | slugify }}">
+              <a href="/music/tags/{{ tag | slugify }}/">{{ tag }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+
+    <div class="music-content">
+      {% if page.m4a %}
+        <audio id="audio-player" controls>
+          <source src="{{ page.m4a | relative_url }}" type="audio/mp4">
+          Your browser does not support the audio element.
+        </audio>
+        <p class="copyright meta">© {{ page.year | default: site.time | date: "%Y" }} Adam Claxon. All rights reserved.</p>
+      {% endif %}
+      {{ content }}
+    </div>
+  </div>
+</article>

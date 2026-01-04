@@ -1,0 +1,113 @@
+a
+  transition: color 0.3s ease-in-out
+section
+  // padding: $ms3
+.container
+  max-width: $ms13
+  margin: auto
+  padding: 1em
+  flex-flow: column wrap
+  justify-content: flex-start
+  @include flexbox()
+  p,h1,h2,h3,h4,h5,h6
+    width: 100%
+#intro,#about
+  background-color: $green
+  color: #fff
+  padding-top: $ms1
+
+#intro p
+  color: var(--off-white)
+  a
+    color: var(--rose-light)
+    &:hover, &:focus
+      color: var(--red)
+      text-decoration: underline
+    & + span.kerning
+      margin-left: -0.15em 
+.intro-text:first-of-type
+  font-size: clamp(1.8em, 4vw + 1rem, $ms3)
+  line-height: 1.1em
+  @media (min-width: $ms9)
+    margin-bottom: 1.7rem
+.intro-text
+  font-family: $headline
+  font-style: italic
+  font-size: $ms1
+  letter-spacing: 0.03em
+  a
+    text-decoration: none
+    &:hover, &:focus
+      color: var(--dark-red)
+article.post
+  max-width: $ms13
+  margin: auto
+  padding: 1em 1em $ms3
+  img
+    max-width: 100%
+#testimonials
+  h2
+    width: 100%
+    display: block
+// Initialize section counter and default backgrounds
+body
+  counter-reset: section-counter
+
+.section-preview
+  counter-increment: section-counter
+  // Default to off-white background
+  background-color: var(--off-white)
+  --muted: var(--brown)
+  
+  // Use CSS counter to determine alternating backgrounds
+  &:nth-of-type(odd)
+    background-color: #fff
+    --muted: var(--a11y-grey)
+  
+  &:nth-of-type(even)
+    background-color: var(--off-white)
+    --muted: var(--brown)
+  &-header
+    h2
+      font-family: var(--serif)
+      font-size: clamp($ms1, 4vw + 1rem, $ms2)
+      margin-top: 0
+      font-weight: 300
+      font-style: italic
+      span
+        font-style: normal
+        color: var(--red)
+      a
+        text-decoration: none
+        color: var(--text)
+        &:hover
+          color: $red
+          text-decoration: underline
+// Handle double-wide sections and their impact on alternating pattern
+.double-wide
+  // On mobile, ensure proper alternating for stacked sections within double-wide
+  @media (max-width: 767px)
+    .section-preview:first-child
+      background-color: #fff
+      --muted: var(--a11y-grey)
+    .section-preview:last-child
+      background-color: var(--off-white)
+      --muted: var(--brown)
+  
+  // Reset the pattern for the section following a double-wide
+  + .section-preview
+    @media (max-width: 767px)
+      // Force alternating pattern reset after double-wide
+      background-color: var(--off-white)
+      --muted: var(--brown)
+      
+      &:nth-of-type(odd)
+        background-color: var(--off-white)
+        --muted: var(--brown)
+      
+      &:nth-of-type(even)
+        background-color: #fff
+        --muted: var(--a11y-grey)
+#grove-list, #library, .grove-section-preview, #music, .library-section-preview
+  .container
+    max-width: $ms14
