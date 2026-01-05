@@ -3,13 +3,12 @@ email: bflack@gmail.com
 description: >-
   👋 Personal homepage • 🪴 Digital garden
 keywords: design, music, theology, combinations of the aforementioned.
-baseurl: "/thegrove" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://benflack.me"
 author: 
   name: Ben Flack
-  email: swdfwqkmjz@privaterelay.appleid.com
-github_username: swdfwqkmjz-droid
-
+  email: bflack@gmail.com
+github_username: bflack
 plugins:
   - jekyll-redirect-from
   - jekyll-feed
