@@ -23,7 +23,7 @@ redirect_from: /failure/
 
 ## Introduction
 
-The first 10 years or so of the millennium brought many different trends with it. There were common refrains like “creation fall, redemption, glory.” or others [fill in the blank here]. Among them was a focus on the power of story. It showed up in church circles—especially among the young, restless and reformed. It showed up in business through lifestyle brands and brand stories. Everybody knew that story had a strong effect It could even have a stronger effect than facts. And yet, intellectual, reformed, young, restless, et cetera, types learned to lean heavily on “the facts,” at least in the way that they speak. Into this environmental story came a book called A Failure of Nerve. The facts of this book are difficult to parse. However, the facts of the book are not the part with the most power. It is its story. And that story has shaped the minds and attitudes of many.
+The first 10 years or so of the millennium contained many trending themes in the church. There were common refrains like “creation fall, redemption, glory.” or others [fill in the blank here]. Among them was a focus on the power of story. It showed up in church circles—especially among the young, restless and reformed. It showed up in business through lifestyle brands and brand stories. Everybody knew that story had a strong effect It could even have a stronger effect than facts. And yet, intellectual, reformed, young, restless, et cetera, types learned to lean heavily on “the facts,” at least in the way that they speak. Into this environmental story came a book called A Failure of Nerve. The facts of this book are difficult to parse. However, the facts of the book are not the part with the most power. It is its story. And that story has shaped the minds and attitudes of many.
 
 ## My journey with A Failure
 
@@ -69,19 +69,13 @@ Imagine applying this to a scenario where you are a leader, and someone comes to
 
 Friedman provides a narrative about the situation (or any number of others), and this person or others like them (each of these matches to the quotes above):
 
-• *This situation is not really a big deal, and those who think it is are really just anxiety-ridden. I am standing tall in this storm, and those who are against me are trying to sabotage me.*
-
-*• This anxious person is calling for empathy and togetherness—they're trying to manipulate and strong arm me into doing what they want!*
-
-*• I must remain unmoved by their pain so they can mature.*
-
-*• They think the problem is what's happening. The truth is that the problem is their reaction to it.*
-
-*• The fact that they're trying to sabotage me is proof that I'm healthy and differentiated while they're clearly not.*
-
-*• They think they know what they need but, as a leader, I know what they really need is to not get what they want.*
-
-*• If they call me cold, etc. for not being concerned, then that's proof positive they're an anxious, undifferentiated, immature saboteur. Not only do I not have to listen, it's imperative that I do not listen, and instead hold my ground.*
+- *This situation is not really a big deal, and those who think it is are really just anxiety-ridden. I am standing tall in this storm, and those who are against me are trying to sabotage me.*
+- *This anxious person is calling for empathy and togetherness—they're trying to manipulate and strong arm me into doing what they want!*
+- *I must remain unmoved by their pain so they can mature.*
+- *They think the problem is what's happening. The truth is that the problem is their reaction to it.*
+- *The fact that they're trying to sabotage me is proof that I'm healthy and differentiated while they're clearly not.*
+- *They think they know what they need but, as a leader, I know what they really need is to not get what they want.*
+- *If they call me cold, etc. for not being concerned, then that's proof positive they're an anxious, undifferentiated, immature saboteur. Not only do I not have to listen, it's imperative that I do not listen, and instead hold my ground.*
 
 ### Questionable themes
 
@@ -110,7 +104,7 @@ On the other end of the spectrum, [people like Mark Sayers and Skye Jethani](htt
 What's the underlying difference, and who's being more faithful to what Friedman says? Does either answer change how helpful the book actually is or not?
 
 ## The most damning data point
-One year before I first read the book, [Douglas Wilson](https://dougwilsonsays.com) gave the book a rave review.
+Just two years before I first read the book, [Douglas Wilson](https://dougwilsonsays.com) gave the book a rave review.
 
 ![An image of Douglas Wilson's Goodreads review of "A Failure of Nerve": 5 stars, November 24, 2011. "This was a fantastic book on leadership. You have to wade through some evolutionary hooey, but if you make the necessary adjustments, the central points are simply strengthened. This is a truly contrarian view of leadership that is wise -- as opposed to simply being mule-headed."](/assets/images/grove/a-failure-of-a-failure-of-nerve-wilson-review.jpg)
 *Douglas Wilson's [Goodreads review of "A Failure of Nerve](https://www.goodreads.com/book/show/151881.A_Failure_of_Nerve)"*
