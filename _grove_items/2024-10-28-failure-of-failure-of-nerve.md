@@ -105,9 +105,15 @@ An important question in applying Friedman’s principals is “what counts as a
 
 In the space of people like Joe Rigney, anxiety is seen as [belonging to women](https://writing.danielletreweek.com/p/on-the-sin-of-empathy-being-a-woman) and the left. The application, then, is something similar to the example I gave of a church leader downplaying concerns about Covid.
 
-On the other end of the spectrum, people like Mark Sayers and Skye Jethani see far right panic over the left as clear examples of pervasive anxiety. Their applications come out in ways that are largely the opposite.
+On the other end of the spectrum, [people like Mark Sayers and Skye Jethani](https://www.holypost.com/post/episode-527-does-god-want-public-christian-symbols-non-anxious-leadership-with-mark-sayers) see far right panic over the left as clear examples of pervasive anxiety. Their applications come out in ways that are largely the opposite.
 
 What's the underlying difference, and who's being more faithful to what Friedman says? Does either answer change how helpful the book actually is or not?
+
+## The most damning data point
+One year before I first read the book, [Douglas Wilson](https://dougwilsonsays.com) gave the book a rave review.
+
+![An image of Douglas Wilson's Goodreads review of "A Failure of Nerve": 5 stars, November 24, 2011. "This was a fantastic book on leadership. You have to wade through some evolutionary hooey, but if you make the necessary adjustments, the central points are simply strengthened. This is a truly contrarian view of leadership that is wise -- as opposed to simply being mule-headed."](assets/images/grove/a-failure-of-a-failure-of-nerve-wilson-review.jpg)
+*Douglas Wilson's [Goodreads review of "A Failure of Nerve](https://www.goodreads.com/book/show/151881.A_Failure_of_Nerve)"*
 
 ## References
 <div class="link-preview" data-url="https://mereorthodoxy.com/sin-of-empathy-joe-rigney-book-review"></div>
