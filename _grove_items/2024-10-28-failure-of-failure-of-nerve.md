@@ -12,7 +12,7 @@ tags:
 redirect_from: /failure/ 
 ---
 <div class="callout callout-note">
-  <p>My experience with [Edwin Friedman’s “A Failure of Nerve”](https://prod.churchpublishing.org/failureofnerve) is that it’s a self-reinforcing closed loop framework that paints hard-headed leaders as hero martyrs who should never back down from their vision especially when they encounter resistance. It’s been adopted in reformed Christian circles and accepted as compatible with Christian virtues, and is the source of the myth that empathy is a sin.</p>
+  <p>My experience of Edwin Friedman’s “A Failure of Nerve” is that it’s a self-reinforcing closed loop framework that paints hard-headed leaders as hero martyrs who should never back down from their vision especially when they encounter resistance. It’s been adopted in reformed Christian circles and accepted as compatible with Christian virtues, and is the source of the myth that empathy is a sin.</p>
   <p>It is, however, also a fuzzy matter. There are helpful ideas in the material, and it can appear that the toxicity of the principals depends greatly on the situation they are applied to. How can the material be navigated and evaluated with clarity?</p>
 </div>
 
@@ -23,7 +23,7 @@ redirect_from: /failure/
 
 ## Introduction
 
-The first 10 years or so of the millennium contained many trending themes in the church. There were common refrains like “creation fall, redemption, glory.” or others [fill in the blank here]. Among them was a focus on the power of story. It showed up in church circles—especially among the young, restless and reformed. It showed up in business through lifestyle brands and brand stories. Everybody knew that story had a strong effect It could even have a stronger effect than facts. And yet, intellectual, reformed, young, restless, et cetera, types learned to lean heavily on “the facts,” at least in the way that they speak. Into this environmental story came a book called A Failure of Nerve. The facts of this book are difficult to parse. However, the facts of the book are not the part with the most power. It is its story. And that story has shaped the minds and attitudes of many.
+The first 10 years or so of the millennium contained many trending themes in the church. There were common refrains like “creation fall, redemption, glory.” or others [fill in the blank here]. Among them was a focus on the power of story. It showed up in church circles—especially among the young, restless and reformed. It showed up in business through lifestyle brands and brand stories. Everybody knew that story had a strong effect It could even have a stronger effect than facts. And yet, intellectual, reformed, young, restless, et cetera, types learned to lean heavily on “the facts,” at least in the way that they speak. Into this environmental story came a book called [A Failure of Nerve](https://prod.churchpublishing.org/failureofnerve). The facts of this book are difficult to parse. However, the facts of the book are not the part with the most power. It is its story. And that story has shaped the minds and attitudes of many.
 
 ## My journey with A Failure
 
