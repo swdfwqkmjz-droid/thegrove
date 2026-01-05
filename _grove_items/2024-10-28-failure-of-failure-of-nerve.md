@@ -2,7 +2,7 @@
 title:  A failure of "A Failure of Nerve"
 layout: grove
 date: 2024-10-28
-updated: 2025-02-20
+updated: 2026-01-05
 status: budding
 image: /assets/images/grove/a-failure-of-a-failure-of-nerve-cover.jpg
 tags:
@@ -12,7 +12,7 @@ tags:
 redirect_from: /failure/ 
 ---
 <div class="callout callout-note">
-  <p>My experience with Edwin Friedman’s “A Failure of Nerve” is that it’s a self-reinforcing closed loop framework that paints hard-headed leaders as hero martyrs who should never back down from their vision especially when they encounter resistance. It’s been adopted in reformed Christian circles and accepted as compatible with Christian virtues, and is the source of the myth that empathy is a sin.</p>
+  <p>My experience with [Edwin Friedman’s “A Failure of Nerve”](https://prod.churchpublishing.org/failureofnerve) is that it’s a self-reinforcing closed loop framework that paints hard-headed leaders as hero martyrs who should never back down from their vision especially when they encounter resistance. It’s been adopted in reformed Christian circles and accepted as compatible with Christian virtues, and is the source of the myth that empathy is a sin.</p>
   <p>It is, however, also a fuzzy matter. There are helpful ideas in the material, and it can appear that the toxicity of the principals depends greatly on the situation they are applied to. How can the material be navigated and evaluated with clarity?</p>
 </div>
 
@@ -40,26 +40,48 @@ The first 10 years or so of the millennium brought many different trends with it
 
 ## Questionable ideas
 
-> I believe there exists throughout America today a rampant sabotaging of leaders who try to stand tall amid the raging anxiety storms of our time.
-—p. 2
+>I believe there exists throughout America today a rampant sabotaging of leaders who try to stand tall amid the raging anxiety storms of our time.
+>
+>—p. 2
 
-> It has been my impression that at any gathering, whether it be public or private, those who are quickest to inject words like sensitivity, empathy, consensus, trust, confidentiality, and togetherness into their arguments have perverted these humanitarian words into power tools to get others to adapt to them.
-—p. 78
+>It has been my impression that at any gathering, whether it be public or private, those who are quickest to inject words like sensitivity, empathy, consensus, trust, confidentiality, and togetherness into their arguments have perverted these humanitarian words into power tools to get others to adapt to them.
+>
+>—p. 78
 
-> …the resistance that sabotages a leader’s initiative usually has less to do with the “issue” that ensues than with the fact that the leader took initiative.
-—p. 3
+>Increasing one's pain threshold for others helps them mature.
+>...trauma is in the experience and the response to it, not in the event itself.
+>
+>—p. 214
 
-> [At the heart of the problem is] A regressive counter-evolutionary trend in which the most dependent members of any organization set the agendas and where adaptation is constantly moving toward weakness rather than strength, thus leveraging power to the recalcitrant, the passive-aggressive, and the most anxious members of an institution rather than toward the energetic, the visionary, the imaginative, and motivated.
-—p. 12
+>Differentiation in a leader will inevitably trigger sabotage from the least well-differentiated others in the system.
+>
+>—p. 215
 
-> Increasing one's pain threshold for others helps them mature.
-—p. 214
+>The focus on “need fulfillment” that so often accompanies an emphasis on empathy leaves out the possibility that what another may really “need” (in order to become more responsible) is not to have their needs fulfilled.
+>
+>—p. 146
 
-> A leader needs to capacity not only to accept the solitariness that comes with the territory, but also to come to love it.
-—p. 18
+>Anyone who wishes to advance our species or an institution must possess those qualities which those who have little sense of self will perceive as narcissistic. All this besides the fact that “arrogant,” “headstrong,” “narcissistic,” and “cold” will be the terms used against any person who tries to be more himself or herself.
+>
+>—p. 190
 
-> Most crises cannot by their very nature be resolved (that is, fixed); they must simply be managed until they work their way through.
-—p. 27
+Imagine applying this to a scenario where you are a leader, and someone comes to you worried about how the church is responding to, oh, I don't know, maybe a global pandemic (theoretically). Perhaps they're noticing that there's a low concern for masking or distancing, etc., and they're really upset because they're concerned about safety, and the church's witness of showing love to others. "Can't you empathize with how scared people are? Can't you empathize with people who are especially at risk?"
+
+Friedman provides a narrative about the situation (or any number of others), and this person or others like them (each of these matches to the quotes above):
+
+• *This situation is not really a big deal, and those who think it is are really just anxiety-ridden. I am standing tall in this storm, and those who are against me are trying to sabotage me.*
+
+*• This anxious person is calling for empathy and togetherness—they're trying to manipulate and strong arm me into doing what they want!*
+
+*• I must remain unmoved by their pain so they can mature.*
+
+*• They think the problem is what's happening. The truth is that the problem is their reaction to it.*
+
+*• The fact that they're trying to sabotage me is proof that I'm healthy and differentiated while they're clearly not.*
+
+*• They think they know what they need but, as a leader, I know what they really need is to not get what they want.*
+
+*• If they call me cold, etc. for not being concerned, then that's proof positive they're an anxious, undifferentiated, immature saboteur. Not only do I not have to listen, it's imperative that I do not listen, and instead hold my ground.*
 
 ### Questionable themes
 
@@ -69,10 +91,6 @@ Part of the overall point of the book is that, in decision making and leadership
 
 There’s an assumption built in about what makes a “good human.” That they are fully controlled *only* by their rational parts, and never affected at all by external input except by their choice to respond to it.
 
-### Examples of how differing application can produce wildly different results
-
-An important question in applying Friedman’s principals is “what counts as an anxious or reactive response?” Is it completely a matter of the person’s affect (E.G. if they’re not calm)? Is it the content of the complaint?
-
 ## Helpful ideas
 
 > Playfulness can get you out of a rut more successfully than seriousness.
@@ -81,7 +99,25 @@ An important question in applying Friedman’s principals is “what counts as a
 > In the search for the solution to any problem, questions are always more important than answers because the way one frames the question, or the problem, already predetermines the range of answers one can conceive in response.
 —p. 37
 
+## Differing presuppositions appear to produce wildly different applications
+
+An important question in applying Friedman’s principals is “what counts as an anxious or reactive response?” Is it completely a matter of the person’s affect (E.G. if they’re not calm)? Is it the content of the complaint?
+
+In the space of people like Joe Rigney, anxiety is seen as [belonging to women](https://writing.danielletreweek.com/p/on-the-sin-of-empathy-being-a-woman) and the left. The application, then, is something similar to the example I gave of a church leader downplaying concerns about Covid.
+
+On the other end of the spectrum, people like Mark Sayers and Skye Jethani see far right panic over the left as clear examples of pervasive anxiety. Their applications come out in ways that are largely the opposite.
+
+What's the underlying difference, and who's being more faithful to what Friedman says? Does either answer change how helpful the book actually is or not?
+
 ## References
+<div class="link-preview" data-url="https://mereorthodoxy.com/sin-of-empathy-joe-rigney-book-review"></div>
+
+<div class="link-preview" data-url="https://writing.danielletreweek.com/p/on-the-sin-of-empathy-being-a-woman"></div>
+
+<div class="link-preview" data-url="https://writing.danielletreweek.com/p/defusing-the-sin-of-empathy"></div>
+
+<div class="link-preview" data-url="https://www.holypost.com/post/episode-527-does-god-want-public-christian-symbols-non-anxious-leadership-with-mark-sayers"></div>
+
 <div class="link-preview" data-url="https://religionnews.com/2025/01/30/why-some-christians-think-mercy-and-empathy-are-sins/"></div>
 
 <div class="link-preview" data-url="https://julieroys.com/columbia-professors-confront-empathy-sin/"></div>

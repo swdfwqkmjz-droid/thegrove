@@ -2,7 +2,7 @@
 title: Intent doesn’t matter more than actions
 layout: grove
 date: 2025-12-13
-updated: 2025-12-13
+updated: 2026-01-04
 status: budding
 image: /assets/images/grove/intent-and-actions.jpg
 tags:
@@ -31,6 +31,7 @@ After having to confront the real effects of my actions at a practical level, an
 
 ## But Joseph
 The most obvious objection is the story of Joseph.
+
 >Fear not for am I in the place of God? As for you, you meant evil against me; God meant it for good, to bring to pass, as it is this day, to save many people alive. And now fear not. I will nourish you and your little ones." And he comforted them and spoke kindly to their heart.
 >
 >—The first book of Moses, commonly called Genesis
