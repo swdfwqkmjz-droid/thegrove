@@ -112,7 +112,7 @@ What's the underlying difference, and who's being more faithful to what Friedman
 ## The most damning data point
 One year before I first read the book, [Douglas Wilson](https://dougwilsonsays.com) gave the book a rave review.
 
-![An image of Douglas Wilson's Goodreads review of "A Failure of Nerve": 5 stars, November 24, 2011. "This was a fantastic book on leadership. You have to wade through some evolutionary hooey, but if you make the necessary adjustments, the central points are simply strengthened. This is a truly contrarian view of leadership that is wise -- as opposed to simply being mule-headed."](assets/images/grove/a-failure-of-a-failure-of-nerve-wilson-review.jpg)
+![An image of Douglas Wilson's Goodreads review of "A Failure of Nerve": 5 stars, November 24, 2011. "This was a fantastic book on leadership. You have to wade through some evolutionary hooey, but if you make the necessary adjustments, the central points are simply strengthened. This is a truly contrarian view of leadership that is wise -- as opposed to simply being mule-headed."](/assets/images/grove/a-failure-of-a-failure-of-nerve-wilson-review.jpg)
 *Douglas Wilson's [Goodreads review of "A Failure of Nerve](https://www.goodreads.com/book/show/151881.A_Failure_of_Nerve)"*
 
 ## References
