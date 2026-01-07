@@ -1,6 +1,7 @@
 ---
 title: Apple Vision Pro and the realness of reality
 layout: grove
+category: essay # or 'note'
 date: 2023-06-05
 updated: 2023-06-05
 status: established

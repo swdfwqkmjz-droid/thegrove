@@ -24,20 +24,32 @@ module Jekyll
         title = note.data['title']
         slug = note.url.gsub(%r{^/|/$}, '')
         note.data['slug'] = slug
-        note_map[title] = note
+        note_map[title.downcase] = note if title
       end
 
       notes.each do |note|
         content = note.content
 
         content.gsub!(/\[\[([^\]]+)\]\]/) do
-          target_title = $1.strip
-          if note_map.key?(target_title)
-            target = note_map[target_title]
+          raw = $1.strip
+          target_title = raw
+          link_text = nil
+
+          if raw.include?('|')
+            parts = raw.split('|', 2)
+            target_title = parts[0].strip
+            link_text = parts[1].strip
+          end
+
+          next "<span class='broken-link'>[[#{raw}]]</span>" if target_title.empty?
+
+          target = note_map[target_title.downcase]
+          if target
             backlinks[target.url] << { "url" => note.url, "title" => note.data["title"] }
-            "[#{target_title}](/#{target.data['slug']})"
+            display = link_text && !link_text.empty? ? link_text : target_title
+            "[#{display}](/#{target.data['slug']})"
           else
-            "<span class='broken-link'>[[#{target_title}]]</span>"
+            "<span class='broken-link'>[[#{raw}]]</span>"
           end
         end
 

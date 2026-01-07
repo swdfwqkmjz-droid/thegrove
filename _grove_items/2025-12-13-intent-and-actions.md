@@ -1,6 +1,7 @@
 ---
 title: Intent doesn’t matter more than actions
 layout: grove
+category: essay # or 'note'
 date: 2025-12-13
 updated: 2026-01-04
 status: budding
@@ -36,9 +37,9 @@ The most obvious objection is the story of Joseph.
 >
 >—The first book of Moses, commonly called Genesis
 
-If Joseph's brothers can have *bad* intent, and the conclusion is "Oh, well God intended good so it's fine." Then how can we not say that good intent should make things okay? Aren't we supposed ot forgive and forget even when the intent is bad, like Joseph did?
+If Joseph's brothers can have *bad* intent, and the conclusion is "Oh, well God intended good so it's fine." Then how can we not say that good intent should make things okay? Aren't we supposed to forgive and forget even when the intent is bad, like Joseph did?
 
-However, Joseph does [tests his brothers extensively](https://podcasts.apple.com/us/podcast/common-ground-northeast/id1548000026?i=1000739143298&r=1064) to see whether they are still the same or not before he reveals himself and extends mercy.
+However, the story goes differently than a simple jump to absolution. Joseph [tests his brothers extensively](https://podcasts.apple.com/us/podcast/common-ground-northeast/id1548000026?i=1000739143298&r=1064) to see whether they are still the same or not before he reveals himself and extends mercy.
 
 >“So even though Joseph recognizes them, he decides to begin giving them a series of tests.
 >

@@ -1,6 +1,7 @@
 ---
 title: Why a Digital Garden?
 layout: grove
+category: essay # or 'note'
 date: 2026-01-01
 updated: 2026-01-01
 status: budding

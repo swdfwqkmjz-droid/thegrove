@@ -1,6 +1,7 @@
 ---
 title: Why do analog and digital designers speak different languages?
 layout: grove
+category: essay # or 'note'
 date: 2023-02-15
 updated: 2025-10-24
 status: budding

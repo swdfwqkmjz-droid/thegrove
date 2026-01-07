@@ -1,6 +1,7 @@
 ---
-title:  A failure of "A Failure of Nerve"
+title: A failure of "A Failure of Nerve"
 layout: grove
+category: essay # or 'note'
 date: 2024-10-28
 updated: 2026-01-05
 status: budding
@@ -9,7 +10,7 @@ tags:
   - culture
   - theology
   - books
-redirect_from: /failure/ 
+redirect_from: /failure/
 ---
 <div class="callout callout-note">
   <p>My experience of Edwin Friedman’s “A Failure of Nerve” is that it’s a self-reinforcing closed loop framework that paints hard-headed leaders as hero martyrs who should never back down from their vision especially when they encounter resistance. It’s been adopted in reformed Christian circles and accepted as compatible with Christian virtues, and is the source of the myth that empathy is a sin.</p>
@@ -116,7 +117,7 @@ Just two years before I first read the book, [Douglas Wilson](https://dougwilson
 
 <div class="link-preview" data-url="https://writing.danielletreweek.com/p/defusing-the-sin-of-empathy"></div>
 
-<div class="link-preview" data-url="https://www.holypost.com/post/episode-527-does-god-want-public-christian-symbols-non-anxious-leadership-with-mark-sayers"></div>
+<div class="link-preview" data-url="https://podcasts.apple.com/us/podcast/the-holy-post/id591157388?i=1000580172170"></div>
 
 <div class="link-preview" data-url="https://religionnews.com/2025/01/30/why-some-christians-think-mercy-and-empathy-are-sins/"></div>
 
